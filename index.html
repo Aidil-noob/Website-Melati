@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="id">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+      <title>Dokumentasi Jamaah Umrah | PT Mizab Haromaen</title>
+      <meta
+         name="description"
+         content="Dokumentasi perjalanan jamaah umrah bersama PT Mizab Haromaen. Hubungi kami melalui WhatsApp atau Instagram."
+      />
+      <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+         html {
+            scroll-behavior: smooth;
+         }
+         body {
+            background: #f8f0dc;
+            color: #302a20;
+            font-family: Georgia, "Times New Roman", serif;
+         }
+         .header {
+            background: #ffffff;
+            padding: 32px 35px 30px;
+            border-bottom: 1px solid #e8ddc4;
+         }
+         .logo {
+            color: #a67c24;
+            font-size: 27px;
+            font-weight: bold;
+            letter-spacing: 1px;
+         }
+         .tagline {
+            margin-top: 18px;
+            color: #716b60;
+            font-size: 12px;
+            letter-spacing: 4px;
+            font-weight: bold;
+         }
+         .hero {
+            background: linear-gradient(135deg, #fbf5e7, #f5e9c9);
+            padding: 115px 36px 80px;
+            min-height: 100vh;
+         }
+         .hero-content {
+            max-width: 1000px;
+            margin: auto;
+         }
+         .label {
+            color: #aa8128;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-bottom: 48px;
+         }
+         .hero h1 {
+            font-size: 57px;
+            line-height: 1.2;
+            color: #29251f;
+            margin-bottom: 35px;
+         }
+         .description {
+            max-width: 750px;
+            color: #625c52;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.9;
+            margin-bottom: 38px;
+         }
+         .btn {
+            display: inline-block;
+            padding: 20px 40px;
+            background: #bd8c24;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 6px 15px rgba(120, 90, 20, 0.15);
+            transition: 0.3s;
+         }
+         .btn:hover {
+            background: #98701c;
+            transform: translateY(-3px);
+         }
+         .photo-frame {
+            margin: 115px auto 0;
+            max-width: 1050px;
+            background: white;
+            padding: 14px;
+            border-radius: 34px;
+            box-shadow: 0 15px 35px rgba(100, 80, 30, 0.15);
+         }
+         .photo-frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 24px;
+            object-fit: cover;
+         }
+         .video-card video {
+            width: 100%;
+            height: 350px;
+            display: block;
+            object-fit: contain;
+            background: #f5e9c9;
+         }
+         .dokumentasi {
+            background: #fffdf7;
+            padding: 100px 35px;
+         }
+         .judul {
+            text-align: center;
+            margin-bottom: 55px;
+         }
+         .judul span {
+            color: #aa8128;
+            font-size: 13px;
+            letter-spacing: 4px;
+            font-weight: bold;
+         }
+         .judul h2 {
+            color: #302a20;
+            font-size: 40px;
+            margin-top: 15px;
+         }
+         .judul p {
+            color: #777;
+            font-family: Arial, sans-serif;
+            margin-top: 15px;
+         }
+         .gallery {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+         }
+         .card {
+            background: white;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.4s;
+         }
+         .card:hover {
+            transform: translateY(-8px);
+         }
+         .card img {
+            width: 100%;
+            height: 280px;
+            display: block;
+            object-fit: cover;
+         }
+         .card-text {
+            padding: 22px;
+         }
+         .card-text h3 {
+            color: #a67c24;
+            font-size: 21px;
+            margin-bottom: 10px;
+         }
+         .card-text p {
+            color: #666;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+         }
+         .testimoni {
+            padding: 100px 35px;
+            background: linear-gradient(135deg, #f5e8c7, #fffaf0);
+         }
+         .testimoni-box {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 50px 40px;
+            text-align: center;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+         }
+         .quote {
+            color: #bd8c24;
+            font-size: 55px;
+         }
+         .testimoni-box p {
+            color: #555;
+            font-size: 19px;
+            line-height: 1.8;
+            font-style: italic;
+         }
+         .testimoni-box h3 {
+            color: #a67c24;
+            margin-top: 25px;
+         }
+         .visi-misi {
+            background: #fffdf7;
+            padding: 100px 35px;
+         }
+         .vm {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+         }
+         .vm-box {
+            padding: 40px;
+            background: linear-gradient(145deg, #ffffff, #f8eed7);
+            border-radius: 25px;
+            border: 1px solid #e7d7af;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+         }
+         .vm-box h3 {
+            color: #a67c24;
+            font-size: 29px;
+            margin-bottom: 20px;
+         }
+         .vm-box p {
+            color: #666;
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+         }
+         .vm-box ul {
+            padding-left: 22px;
+         }
+         .vm-box li {
+            color: #666;
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            margin-bottom: 12px;
+         }
+         .tentang {
+            padding: 110px 35px;
+            text-align: center;
+            color: white;
+            background:
+               linear-gradient(rgba(55, 42, 15, 0.68), rgba(55, 42, 15, 0.68)),
+               url("img/jamaah2.jpg");
+            background-size: cover;
+            background-position: center;
+         }
+         .tentang-content {
+            max-width: 800px;
+            margin: auto;
+         }
+         .tentang small {
+            letter-spacing: 4px;
+         }
+         .tentang h2 {
+            font-size: 40px;
+            line-height: 1.3;
+            margin: 20px 0;
+         }
+         .tentang p {
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            line-height: 1.8;
+         }
+         .kontak {
+            padding: 90px 35px;
+            text-align: center;
+            background: #f8f0dc;
+         }
+         .kontak h2 {
+            color: #a67c24;
+            font-size: 35px;
+            margin-bottom: 15px;
+         }
+         .kontak p {
+            color: #666;
+            font-family: Arial, sans-serif;
+            margin-bottom: 10px;
+         }
+         .instagram-name {
+            margin-top: 20px;
+            margin-bottom: 25px;
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            color: #555;
+         }
+         .instagram-name a {
+            color: #a67c24;
+            text-decoration: none;
+            font-weight: bold;
+         }
+         .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+         }
+         .social-btn {
+            display: inline-block;
+            padding: 16px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+         }
+         .social-btn:hover {
+            transform: translateY(-4px);
+            opacity: 0.9;
+         }
+         .whatsapp-btn {
+            background: #25d366;
+            color: white;
+            box-shadow: 0 6px 15px rgba(37, 211, 102, 0.25);
+         }
+         .instagram-btn {
+            background: #a67c24;
+            color: white;
+            box-shadow: 0 6px 15px rgba(166, 124, 36, 0.25);
+         }
+         footer {
+            background: #302819;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+         }
+         footer h3 {
+            color: #d3b15c;
+            margin-bottom: 10px;
+         }
+         footer p {
+            color: #ccc;
+            font-family: Arial, sans-serif;
+            margin-bottom: 10px;
+         }
+         .copy {
+            font-size: 12px;
+            color: #999;
+         }
+         @media (max-width: 768px) {
+            .header {
+               padding: 32px 35px 30px;
+            }
+            .logo {
+               font-size: 25px;
+            }
+            .tagline {
+               font-size: 10px;
+               letter-spacing: 3px;
+            }
+            .hero {
+               padding: 115px 36px 65px;
+            }
+            .label {
+               font-size: 13px;
+               margin-bottom: 45px;
+            }
+            .hero h1 {
+               font-size: 42px;
+               line-height: 1.25;
+            }
+            .description {
+               font-size: 17px;
+               line-height: 1.9;
+            }
+            .btn {
+               padding: 19px 34px;
+               font-size: 16px;
+            }
+            .photo-frame {
+               margin-top: 110px;
+               padding: 12px;
+               border-radius: 28px;
+            }
+            .photo-frame img {
+               border-radius: 20px;
+            }
+            .dokumentasi {
+               padding: 80px 25px;
+            }
+            .judul h2 {
+               font-size: 30px;
+            }
+            .gallery {
+               grid-template-columns: 1fr;
+            }
+            .card img {
+               height: 310px;
+            }
+            .testimoni {
+               padding: 80px 25px;
+            }
+            .testimoni-box {
+               padding: 35px 25px;
+            }
+            .testimoni-box p {
+               font-size: 17px;
+            }
+            .visi-misi {
+               padding: 80px 25px;
+            }
+            .vm {
+               grid-template-columns: 1fr;
+            }
+            .vm-box {
+               padding: 30px;
+            }
+            .tentang {
+               padding: 90px 25px;
+            }
+            .tentang h2 {
+               font-size: 31px;
+            }
+            .social-links {
+               flex-direction: column;
+            }
+            .social-btn {
+               width: 90%;
+               max-width: 320px;
+            }
+         }
+         @media (max-width: 400px) {
+            .hero h1 {
+               font-size: 36px;
+            }
+            .logo {
+               font-size: 22px;
+            }
+            .tagline {
+               font-size: 9px;
+            }
+            .photo-frame {
+               margin-top: 80px;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <!-- HEADER -->
+      <header class="header">
+         <div class="logo">PT MIZAB HAROMAEN</div>
+         <div class="tagline">TEMAN PERJALANAN MENUJU BAITULLAH</div>
+      </header>
+      <!-- HERO -->
+      <section class="hero">
+         <div class="hero-content">
+            <div class="label">DOKUMENTASI JAMAAH UMRAH</div>
+            <h1>Jejak Perjalanan Menuju Baitullah</h1>
+            <p class="description">
+               Saksikan berbagai momen berharga perjalanan jamaah umrah bersama
+               PT Mizab Haromaen.
+            </p>
+            <a href="#dokumentasi" class="btn">Lihat Dokumentasi </a>
+            <div class="photo-frame">
+               <img
+                  src="img/Ustad.jpg"
+                  alt="Dokumentasi Jamaah PT Mizab Haromaen"
+               />
+            </div>
+         </div>
+      </section>
+      <!-- DOKUMENTASI -->
+      <section class="dokumentasi" id="dokumentasi">
+         <div class="judul">
+            <span>DOKUMENTASI JAMAAH </span>
+            <h2>Momen Perjalanan Umrah</h2>
+            <p>Setiap perjalanan memiliki cerita yang layak untuk dikenang.</p>
+         </div>
+         <div class="gallery">
+            <div class="card">
+               <img src="img/IMG-20260910-WA0005.jpg" alt="Jamaah 1" />
+               <div class="card-text">
+                  <h3>Perjalanan ibadah</h3>
+                  <p>
+                     Mendampingi jamaah menuju Baitullah dengan penuh pelayanan.
+                  </p>
+               </div>
+            </div>
+            <div class="card">
+               <img src="img/IMG-20260910-WA0006.jpg" alt="Jamaah 2" />
+               <div class="card-text">
+                  <h3>Kenangan Indah di Baitullah</h3>
+                  <p>
+                     Tanah suci,tempat dimana rindu dan syukur bertemu,selamanya
+                     di hati.
+                  </p>
+               </div>
+            </div>
+            <div class="card">
+               <img src="img/IMG_20260910_155540.jpg" alt="Jamaah 3" />
+               <div class="card-text">
+                  <h3>Madinah Al-Munawwarah</h3>
+                  <p>Kota bercahaya yang selalu dirindukan</p>
+               </div>
+            </div>
+            <div class="card">
+               <img src="img/IMG_20260910_155531.jpg" alt="Jamaah 4" />
+               <div class="card-text">
+                  <h3>Ibadah di Makkah</h3>
+                  <p>Rangkaian tawaf,sa'i,hingga tahallul.</p>
+               </div>
+            </div>
+            <!-- VIDEO DOKUMENTASI -->
+            <div class="video-card">
+               <video controls playsinline preload="metadata">
+                  <source
+                     src="img/Video1.mp4"
+                     type="video/mp4"
+                  />
+               </video>
+               <div class="video-text">
+                  <h3>Dokumentasi kebersamaan jamaah umrah</h3>
+                  <p>
+                     Saksikan momen kebersamaan jamaah umrah sebelum berangkat
+                     ketanah suci bersama PT Mizab Haromaen
+                  </p>
+               </div>
+            </div>
+            <div class="video-card">
+               <video controls playsinline preload="metadata">
+                  <source
+                     src="img/Video2.mp4"
+                     type="video/mp4"
+                  />
+               </video>
+               <div class="video-text">
+                  <h3>Dokumentasi Perjalanan</h3>
+                  <p>
+                     Saksikan momen perjalanan jamaah umrah di madinah bersama
+                     PT Mizab Haromaen di Tanah Suci.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- TESTIMONI -->
+      <section class="testimoni">
+         <div class="judul">
+            <span>TESTIMONI </span>
+            <h2>Apa Kata Mereka?</h2>
+         </div>
+         <div class="testimoni-box">
+            <div class="quote">“</div>
+            <p>
+               Alhamdulillah,perjalanan umrah bersama PT Mizab Haromaen sangat
+               nyaman. Pelayanan dan bimbingan mutawif sangat membantu kami
+               selama beribadah.
+            </p>
+            <h3>— Jamaah PT Mizab Haromaen</h3>
+         </div>
+      </section>
+      <!-- VISI MISI -->
+      <section class="visi-misi" id="visimisi">
+         <div class="judul">
+            <span>VISI & MISI </span>
+            <h2>Komitmen Kami</h2>
+            <p>Memberikan pelayanan terbaik untuk perjalanan ibadah jamaah.</p>
+         </div>
+         <div class="vm">
+            <div class="vm-box">
+               <h3>✦ Visi</h3>
+               <p>
+                  Menjadi penyelenggara perjalanan ibadah umrah yang
+                  terpercaya,profesional,amanah,dan memberikan pelayanan terbaik
+                  kepada setiap jamaah.
+               </p>
+            </div>
+            <div class="vm-box">
+               <h3>✧ Misi</h3>
+               <ul>
+                  <li>Memberikan pelayanan yang ramah,aman,dan profesional.</li>
+                  <li>
+                     Memberikan bimbingan ibadah yang baik kepada setiap jamaah.
+                  </li>
+                  <li>Mendampingi jamaah selama perjalanan ibadah umrah.</li>
+                  <li>Mengutamakan kenyamanan dan kepuasan jamaah.</li>
+                  <li>Membangun kepercayaan melalui pelayanan yang amanah.</li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <!-- TENTANG -->
+      <section class="tentang">
+         <div class="tentang-content">
+            <small>PT MIZAB HAROMAEN </small>
+            <h2>
+               Satukan niat,bulatkan tekad,Go Baitullah bersama PT Mizab
+               Haromaen!✨
+            </h2>
+            <p>
+               PT Mizab Haromaen hadir untuk mendampingi jamaah dalam perjalanan
+               ibadah umrah dengan pelayanan,bimbingan,dan pendampingan yang
+               mengutamakan kenyamanan jamaah.
+            </p>
+         </div>
+      </section>
+      <!-- KONTAK -->
+      <section class="kontak" id="kontak">
+         <h2>Hubungi Kami</h2>
+         <p>Dapatkan informasi perjalanan umrah bersama PT Mizab Haromaen.</p>
+         <div class="instagram-name">
+            Instagram:<a
+               href="https://www.instagram.com/mizabharomaen/"
+               target="_blank"
+               rel="noopener noreferrer"
+               >@mizabharomaen
+            </a>
+         </div>
+         <div class="social-links">
+            <!-- WHATSAPP --><a
+               class="social-btn whatsapp-btn"
+               href="https://api.whatsapp.com/send?phone=6281161613435"
+               target="_blank"
+               rel="noopener noreferrer"
+               >💬 Hubungi WhatsApp </a
+            ><!-- INSTAGRAM --><a
+               class="social-btn instagram-btn"
+               href="https://www.instagram.com/mizabharomaen/"
+               target="_blank"
+               rel="noopener noreferrer"
+               >📷 Instagram
+            </a>
+         </div>
+      </section>
+      <!-- FOOTER -->
+      <footer>
+         <h3>PT MIZAB HAROMAEN</h3>
+         <p>Teman Perjalanan Menuju Baitullah</p>
+         <p>
+            Instagram:<a
+               href="https://www.instagram.com/mizabharomaen/"
+               target="_blank"
+               rel="noopener noreferrer"
+               style="color: #d3b15c; text-decoration: none; font-weight: bold"
+               >@mizabharomaen
+            </a>
+         </p>
+         <p class="copy">© 2026 PT Mizab Haromaen</p>
+      </footer>
+   </body>
+</html>
